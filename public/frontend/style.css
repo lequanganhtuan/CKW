@@ -80,7 +80,7 @@ body {
 	overflow-x: hidden;
 }
 a {
-	color: #a4a4a4;
+	color: #fff;
 	transition: 0.3s ease-in-out;
 }
 a:hover {
@@ -104,7 +104,7 @@ a,
 button,
 input {
 	outline: medium none;
-	color: #a5a5a5;
+	color: #fff;
 }
 button:focus {
 	outline: none;
@@ -314,7 +314,7 @@ textarea {
 /*----------------------------------------*/
 button.li-btn {
 	border: none;
-	background: #fed700;
+	background: rgb(20, 53, 195);
 	color: #242424;
 	font-size: 20px;
 	width: 45px;
@@ -1313,7 +1313,7 @@ textarea:focus {
 /*----------------------------------------*/
 /*Header Top*/
 .header-top {
-	background: #f8f9f9;
+	background: rgb(20, 53, 195);
 	padding: 12px 0;
 	border-bottom: 1px solid #e1e1e1;
 }
@@ -1525,7 +1525,7 @@ textarea:focus {
 }
 .hm-minicart-trigger {
 		border-radius: 2px;
-		background: #e80f0f;
+		background: rgb(20, 53, 195);
 		color: #fff;
 		height: 45px;
 		cursor: pointer;
@@ -1567,7 +1567,7 @@ textarea:focus {
 		font-size: 12px;
 		font-weight: 400;
 		color: #242424;
-		background: #fed700;
+		background: rgb(20, 53, 195);
 		text-align: center;
 		border-radius: 100%;
 }
@@ -1734,7 +1734,7 @@ textarea:focus {
 }
 /*Header Bottom Menu*/
 .header-bottom {
-		background: #fed700;
+		background: rgb(20, 53, 195);
 		margin-bottom: 20px;
 }
 .hb-menu > nav > ul {
@@ -1748,7 +1748,7 @@ textarea:focus {
 }
 .hb-menu nav > ul > li > a {
 	display: flex;
-	color: #242424;
+	color: #fff;
 	text-transform: none;
 	font-size: 14px;
 	line-height: 35px;
@@ -1931,7 +1931,7 @@ textarea:focus {
 }
 /*Sticky*/
 .header-sticky.sticky {
-	background: rgba(254,215,0,.8);
+	background: rgb(20, 53, 195);
 	left: 0;
 	position: fixed;
 	right: 0;
@@ -2929,7 +2929,7 @@ textarea:focus {
 .footer-newsletter .form-group .btn {
 	position: absolute;
 	right: 0;
-	background: #fed700;
+	background:rgb(20, 53, 195);
 	border: none;
 	color: #242424;
 	height: 45px;

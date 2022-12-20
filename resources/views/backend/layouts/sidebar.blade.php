@@ -5,7 +5,7 @@
       <div class="sidebar-brand-icon rotate-n-15">
         <i class="fas fa-laugh-wink"></i>
       </div>
-      <div class="sidebar-brand-text mx-3">Admin</div>
+      <div class="sidebar-brand-text mx-3">{{Auth()->user()->name}}</div>
     </a>
 
     <!-- Divider -->
@@ -28,11 +28,11 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <!-- Nav Item - Charts -->
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link" href="{{route('file-manager')}}">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Quản lý file</span></a>
-    </li>
+    </li> --}}
 
     <li class="nav-item">
       <a class="nav-link collapsed" href="{{route('banner.index')}}" >
@@ -64,21 +64,21 @@
     </li>
 
     {{-- Brands --}}
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('brand.index')}}" >
           <i class="fas fa-table"></i>
           <span>Thương hiệu</span>
         </a>
-    </li>
+    </li> --}}
 
     {{-- Shipping --}}
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('shipping.index')}}">
           <i class="fas fa-truck"></i>
           <span>Vận chuyển</span>
         </a>
 
-    </li>
+    </li> --}}
 
     <!--Orders -->
     <li class="nav-item">
@@ -105,22 +105,21 @@
     </div>
 
     <!-- Posts -->
-    <li class="nav-item">
+    {{-- <li class="nav-item">
       <a class="nav-link collapsed" href="{{route('post.index')}}" >
         <i class="fas fa-fw fa-folder"></i>
         <span>Tin Khuyến Mãi</span>
       </a>
-
-    </li>
+    </li> --}}
 
      <!-- Category -->
-     <li class="nav-item">
+     {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('post-category.index')}}" >
           <i class="fas fa-sitemap fa-folder"></i>
           <span>Danh Mục Khuyến Mãi</span>
         </a>
 
-      </li>
+      </li> --}}
 
       <!-- Tags -->
     <li class="nav-item">
@@ -132,12 +131,12 @@
     </li>
 
       <!-- Comments -->
-      <li class="nav-item">
+      {{-- <li class="nav-item">
         <a class="nav-link" href="{{route('comment.index')}}">
             <i class="fas fa-comments fa-chart-area"></i>
             <span>Bình luận</span>
         </a>
-      </li>
+      </li> --}}
 
 
     <!-- Divider -->
@@ -146,11 +145,11 @@
     <div class="sidebar-heading">
         General Settings
     </div>
-    <li class="nav-item">
+    {{-- <li class="nav-item">
       <a class="nav-link" href="{{route('coupon.index')}}">
           <i class="fas fa-table"></i>
           <span>Mã Giảm Giá</span></a>
-    </li>
+    </li> --}}
      <!-- Users -->
      <li class="nav-item">
         <a class="nav-link" href="{{route('users.index')}}">
@@ -158,11 +157,11 @@
             <span>Tài khoản</span></a>
     </li>
      <!-- General settings -->
-     <li class="nav-item">
+     {{-- <li class="nav-item">
         <a class="nav-link" href="{{route('settings')}}">
             <i class="fas fa-cog"></i>
             <span>Cài đặt</span></a>
-    </li>
+    </li> --}}
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">

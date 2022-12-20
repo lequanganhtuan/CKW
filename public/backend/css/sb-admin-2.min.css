@@ -43,7 +43,8 @@
 *,
 ::after,
 ::before {
-    box-sizing: border-box
+    box-sizing: border-box;
+    color: #3b5998
 }
 
 html {
@@ -11077,8 +11078,10 @@ a:focus {
 }
 
 .bg-gradient-primary {
-    background-color: #4e73df;
-    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    /* background-color: #4e73df;
+    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%); */
+    /* background-image: url(https://wallpapercave.com/wp/wp8183280.jpg); */
+    background-color: var(--blue);
     background-size: cover
 }
 
@@ -11523,6 +11526,10 @@ a:focus {
     display: block
 }
 
+.sidebar .nav-item .nav-link span:hover {
+    color: #fff;
+}
+
 .sidebar .nav-item.active .nav-link {
     font-weight: 700
 }
@@ -11863,11 +11870,11 @@ a:focus {
 }
 
 .sidebar-dark .sidebar-heading {
-    color: rgba(255, 255, 255, .4)
+    color: #fff
 }
 
 .sidebar-dark .nav-item .nav-link {
-    color: rgba(255, 255, 255, .8)
+    color: #000
 }
 
 .sidebar-dark .nav-item .nav-link i {
@@ -12048,7 +12055,7 @@ a:focus {
 }
 
 .bg-login-image {
-    background: url(https://res.cloudinary.com/practicaldev/image/fetch/s--_YmOM7iC--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/mn3rvrcdz5ns9bchv1fx.png);
+    background: url(https://wallpapercave.com/wp/wp8183280.jpg);
     background-position: center;
     background-size: cover
 }

@@ -41,14 +41,16 @@
                 {{-- {{$category}} --}}
 
                 <div class="form-group {{ $category->is_parent == 1 ? 'd-none' : '' }}" id='parent_cat_div'>
-                    <label for="parent_id">Dah Mục Con</label>
+                    <label for="parent_id">Danh Mục Con</label>
                     <select name="parent_id" class="form-control">
                         <option value="">--Chọn Danh Mục Cha--</option>
+
                         @foreach ($parent_cats as $key => $parent_cat)
                             <option value='{{ $parent_cat->id }}'
                                 {{ $parent_cat->id == $category->parent_id ? 'selected' : '' }}>{{ $parent_cat->title }}
                             </option>
                         @endforeach
+                        
                     </select>
                 </div>
 

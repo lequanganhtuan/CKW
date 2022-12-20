@@ -12,10 +12,13 @@ class MessageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    // admin message
     public function index(){
         $messages=Message::paginate(20);
         return view('backend.message.index')->with('messages',$messages);
     }
+
     public function messageFive()
     {
         $message=Message::whereNull('read_at')->limit(5)->get();
@@ -111,6 +114,7 @@ class MessageController extends Controller
      */
     public function destroy($id)
     {
+        //delete message
         $message=Message::find($id);
         $status=$message->delete();
         if($status){

@@ -5,6 +5,7 @@
 <div class="card">
     <div class="card-header py-3">
     <div class="col-sm-6">
+      {{-- breadcurm --}}
         <ol class="breadcrumb float-sm-left">
             <li class="breadcrumb-item"><a href="{{ route('admin') }}"> <i class="nav-icon fas fa fa-home"></i> Trang chủ</a></li>
             <li class="breadcrumb-item"><a href="{{ route('category.index') }}">Danh mục</a></li>
@@ -14,13 +15,17 @@
     </div>
     <div class="card-body">
       <form method="post" action="{{route('category.store')}}">
-        {{csrf_field()}}
+        {{-- token request --}}
+        {{csrf_field()}} 
         <div class="form-group">
           <label for="inputTitle" class="col-form-label">Tên danh mục <span class="text-danger">*</span></label>
           <input id="inputTitle" type="text" name="title" value="{{old('title')}}" class="form-control">
+          {{-- {{old('title')}} to get data from the last save --}}
+          {{-- $message from messageController --}}
           @error('title')
           <span class="text-danger">{{$message}}</span>
           @enderror
+
         </div>
 
         <div class="form-group">
@@ -32,18 +37,20 @@
         </div>
 
         <div class="form-group">
-          <label for="is_parent">Is Parent</label><br>
+          <label for="is_parent">Danh mục đã tồn tại?</label><br>
           <input type="checkbox" name='is_parent' id='is_parent' value='1' checked> Yes
         </div>
         {{-- {{$parent_cats}} --}}
 
         <div class="form-group d-none" id='parent_cat_div'>
-          <label for="parent_id">Parent Category</label>
+          <label for="parent_id">Lựa chọn danh mục đã có </label>
           <select name="parent_id" class="form-control">
               <option value="">--Select any category--</option>
+              {{-- $parent_cats from CategoryController create --}}
               @foreach($parent_cats as $key=>$parent_cat)
                   <option value='{{$parent_cat->id}}'>{{$parent_cat->title}}</option>
               @endforeach
+
           </select>
         </div>
 
@@ -62,6 +69,7 @@
           @error('photo')
           <span class="text-danger">{{$message}}</span>
           @enderror
+
         </div>
 
         <div class="form-group">

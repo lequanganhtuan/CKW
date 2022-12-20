@@ -76,23 +76,23 @@
                     @endphp
                     <div class="footer-logo">
                         @foreach($footer as $data)
-                        <img src="{{$data->photo}}" alt="{{$data->photo}}">
+                        <img src="{{ asset("storage/photos/1/Logo/3.png") }}" alt="{{$data->photo}}">
                         <p class="info">
-                           {!!$data->description!!}
+                           {{-- {!!$data->description!!} --}}
                         </p>
                     </div>
                     <ul class="des">
                         <li>
                             <span>Địa chỉ: </span>
-                           {{$data->address}}
+                           {{-- {{$data->address}} --}}
                         </li>
                         <li>
                             <span>Điện thoại: </span>
-                            <a href="#">{{$data->phone}}</a>
+                            {{-- <a href="#">{{$data->phone}}</a> --}}
                         </li>
                         <li>
                             <span>Email: </span>
-                            <a href="{{$data->email}}">{{$data->email}}</a>
+                            {{-- <a href="{{$data->email}}">{{$data->email}}</a> --}}
                         </li>
                     </ul>
                     @endforeach
@@ -188,19 +188,19 @@
             <div class="col-lg-12">
                 <!-- Begin Footer Links Area -->
                 <div class="footer-links">
-                    <ul>
+                    {{-- <ul>
                         <li><a href="#">© 2022. Công ty cổ phần Thế Giới Di Động. GPDKKD:  
                             Địa chỉ: TP.Hồ Chí Minh. Điện thoại: 0343754517. Email: admin@gmail.com Chịu trách nhiệm nội dung: NQK</a></li>
                         
-                    </ul>
+                    </ul> --}}
                 </div>
                 <!-- Footer Links Area End Here -->
                 <!-- Begin Footer Payment Area -->
-                <div class="copyright text-center">
+                {{-- <div class="copyright text-center">
                     <a href="#">
                         <img src="{{asset('frontend/images/payment/1.png')}}" alt="">
                     </a>
-                </div>
+                </div> --}}
                 <!-- Footer Payment Area End Here -->
                 <!-- Begin Copyright Area -->
                

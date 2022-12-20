@@ -36,7 +36,7 @@
         </div>
         <!-- Header Top Area End Here -->
         <!-- Begin Header Middle Area -->
-        <div class="header-middle pl-sm-0 pr-sm-0 pl-xs-0 pr-xs-0">
+        <div class="header-middle pl-sm-0 pr-sm-0 pl-xs-0 pr-xs-0"  style="background-color: #fff">
             <div class="container">
                 <div class="row">
                     @php
@@ -47,7 +47,7 @@
                         <div class="logo pb-sm-30 pb-xs-30">
                             <a href="{{route('home')}}">
                                 @foreach ($settings as $setting)
-                                    <img src="{{ $setting->logo }}" alt="{{ $setting->logo }}">
+                                    <img src="{{ asset("storage/photos/1/Logo/3.png") }}" alt="{{ $setting->logo }}">
                                 @endforeach
                             </a>
                         </div>
@@ -231,9 +231,9 @@
                                   
                                        
                                     </li>
-                                    <li><a href="{{route('contact')}}">Liên Hệ</a></li>
+                                    {{-- <li><a href="{{route('contact')}}">Liên Hệ</a></li>
                                     <li><a href="{{route('orders')}}">Lịch Sử Đơn Hàng</a></li>
-                                    <li><a href="{{route('blog')}}">Khuyến Mãi</a></li>
+                                    <li><a href="{{route('blog')}}">Khuyến Mãi</a></li> --}}
                                 </ul>
                             </nav>
                         </div>
